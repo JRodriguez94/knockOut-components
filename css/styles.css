@@ -1,0 +1,88 @@
+:root {
+    --paragraph-color: #7e7d7d;
+    --border-radius: 6px;
+ }
+ 
+ * {
+    box-sizing: border-box;
+ }
+ 
+ html,
+ body {
+    font-size: 30px;
+    height: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+ }
+ 
+ body {
+    color: #222;
+    background: linear-gradient(180deg, #64cddb 0%, #36abd0 100%);
+    padding-top: 1em;
+ }
+ h2, ul, p {
+    margin: 0;
+ }
+ ul {
+    padding-top: 1em;
+    min-height: 100px;
+ }
+ li {
+    padding: 0.5em 0;
+ }
+ 
+ .card {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: var(--border-radius);
+    max-width: 24em;
+    margin: 0 auto;
+    padding: 1em;
+ }
+ .card input {
+    display:block;
+    width: 100%;
+ }
+ 
+ .card header {
+    padding: 1em;
+ }
+ 
+ .card-section {
+    padding: 2em 1em;
+ }
+ 
+ .card-section h2 {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+ }
+ .card-section p {
+    font-weight: normal;
+    color: var(--paragraph-color);
+    margin-bottom: 1em;
+    margin-top: 1em;
+ }
+ 
+ .LoadingButton {
+    display: block;
+    margin-top: 1em;
+    appearance: none;
+    height: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background: #385ce8;
+    font-family: inherit;
+    outline: 0;
+    border:0;
+    color: #fff;
+    font-weight:bold;
+    
+    transition: background 0.2s;
+    width: 100%;
+    
+ }
+ 
+ .LoadingButton.loading {
+    background: #bdbdbd;
+ }
